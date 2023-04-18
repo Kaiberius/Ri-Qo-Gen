@@ -1,0 +1,903 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a, li {
+    list-style:none;
+    text-decoration: none;
+}
+body {
+    position: relative;
+    background-color: rgb(0, 81, 162);
+    overflow-x: hidden;
+}
+.landing-page, #about-section, #how-to-use {
+    min-height: 100vh;
+}
+/**** HEADER SECTION ****/
+.g-header {
+    position: sticky;
+    top: 0;
+    height: 11vh;
+    padding: 0 3rem;
+    background-color:  hsla(210, 98%, 23%, 0.134);
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+}
+.logo {
+    color: rgb(190, 221, 249);
+    letter-spacing: 2px;
+    font-family: 'Cinzel', serif;
+}
+.right-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 5rem;
+}
+.burger-menu {
+    height: 40px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.line {
+    width: 100%;
+    height: 7px;
+    background-color: rgb(99, 177, 245);
+    border-radius: 2px;
+}
+.link-header {
+    font-size: 1.8em;
+    letter-spacing: 2px;
+    color: rgb(68, 162, 255);
+    font-family: 'Nunito', sans-serif;
+}
+.nav {
+    position: absolute;
+    left: 0;
+    top: 11vh;
+    width: 100%;
+    height: 90vh;
+    background-color:  hsla(210, 98%, 23%, 0.72);
+    backdrop-filter: blur(40px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+    transform: translateY(-120%);
+}
+.nav-active {
+    transform: translateY(0%);
+}
+.fir-link {
+    color: aliceblue;
+    font-family: 'Nunito', sans-serif;
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+/**** HEADER SECTION ****/
+/**** LANDING-PAGE SECTION ****/
+.landing-page {
+    position: relative;
+    padding: 0 3rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.lp-div {
+    width: 50%;
+}
+.lp-header {
+    font-size: 4em;
+    letter-spacing: 2px;
+    font-family: 'Cinzel', serif;
+    color: rgb(190, 221, 249);
+}
+.lp-para {
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    font-family: 'Nunito', sans-serif;
+    color: rgba(86, 172, 248, 0.799);
+}
+.btn-div {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: left;
+    column-gap: 1rem;
+}
+.btn-1,
+.btn-2 {
+    padding: 0.8rem 5rem;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 1.3em;
+    color:rgb(190, 221, 249);
+}
+.btn-1 {
+    border: 2px solid rgba(75, 126, 177, 0.145);
+    background-color: rgb(1, 128, 255);
+}
+.btn-2 {
+    border: 2px solid rgba(75, 126, 177, 0);
+    background-color: rgba(1, 128, 255, 0);
+}
+.btn-1:hover {
+    border: 2px solid rgba(75, 126, 177, 0.145);
+    background-color: rgb(39, 147, 255);
+}
+.btn-2:hover {
+    border: 2px solid rgba(75, 126, 177, 0);
+    background-color: rgba(0, 30, 101, 0.514);
+    color: white;
+}
+/**** LANDING-PAGE SECTION ****/
+/**** ABOUT SECTION ****/
+#about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.abo-header, .htu-header {
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    color:  rgb(215, 235, 252); 
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 2rem;
+}
+.about-para {
+    font-size: 1.6em;
+    line-height: 35px;
+    width: 70%;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: 'Nunito', sans-serif;
+    color: rgba(181, 220, 254, 0.799);
+}
+
+/**** ABOUT SECTION ****/
+/**** HOW TO USE ****/
+#how-to-use {
+    background-color: rgb(0, 58, 117);
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.htu-steps {
+    display: flex;
+    justify-content: space-around;
+}
+.steps {
+    border: 2px solid hsla(218, 91%, 30%, 0.286);
+    border-radius: 4px;
+    background-color: rgba(0, 67, 134, 0.729);
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 1rem;
+}
+.step-img {
+    width: 40%;
+    align-self: center;
+}
+.step-header {
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    margin: 1rem 0;
+    color:  rgb(215, 235, 252); 
+}
+.step-para {
+    font-size: 1.2em;
+    color: rgba(115, 189, 255, 0.799);
+    font-family: 'Nunito', sans-serif;
+}
+.cta-link {
+    font-size: 2em;
+    color: hsla(210, 100%, 56%, 0.282);
+    letter-spacing: 2px;
+    margin-top: 3rem;
+    font-family: 'Nunito', sans-serif;
+    transition: 0.3s;
+}
+.cta-link:hover {
+    color: hsla(210, 100%, 56%, 0.678);
+}
+/**** HOW TO USE ****/
+/**** DEMO SECTION ****/
+#demo {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.quote-block {
+    width: 60%;
+    background-color: hsla(210, 100%, 13%, 0.546);
+    padding: 3rem 5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.gen-qoute {
+    color:rgb(184, 221, 253);
+    font-size: 2em;
+    letter-spacing: 1px;
+    font-weight: 100;
+    font-style: italic;
+}
+#gen-btn {
+    padding: 0.8rem 4rem;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    border: 2px solid rgba(75, 126, 177, 0.145);
+    background-color: rgb(1, 128, 255);
+    color: aliceblue;
+    cursor: pointer;
+}
+/**** DEMO SECTION ****/
+/**** FOOTER SECTION ****/
+footer {
+    min-height: 40vh;
+    background-color: rgb(0, 35, 80);
+    display: flex;
+    justify-content: flex-start;
+    padding: 2rem;
+}
+.con-header {
+    font-family: 'Nunito', sans-serif;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+    color:hsla(208, 92%, 80%, 0.504);
+}
+.footer-link {
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    color: rgb(0, 102, 255);
+    transition: 0.3s
+}
+.footer-link:hover {
+    color: hsl(216, 100%, 77%);
+}
+
+/**** FOOTER SECTION ****/
+/**** YAMA LAST ****/
+.yama-last {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: azure;
+}
+.yl-para {
+    font-size: 1.2em;
+    letter-spacing: 1.5px;
+    color: rgb(4, 138, 254);
+    transition: 0.3s;
+}
+.yl-para:hover {
+    color: rgb(0, 35, 65);
+}
+/**** YAMA LAST ****/
+/**** FORM TINGS ****/
+.form-body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#myForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    width: 40vw;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    background-color: #4d7aa1bc;
+    row-gap: 1rem;
+    font-family: 'Nunito', sans-serif;
+}
+.form-h1 {
+    color: hsla(207, 100%, 91%, 0.463);
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 3em;
+}
+.input-block-parent, .input-block-child {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.input-block-parent {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(5, 2fr);
+    grid-template-areas:  
+    "A B"
+    "C C"
+    "D D"
+    "E E"
+    "F F";
+    column-gap: 1rem;
+}
+.input-block-child:first-child {
+    grid-area: A;
+}
+.input-block-child:nth-child(2){
+    grid-area: B;
+}
+.input-block-child:nth-child(3){
+    grid-area: C;
+}
+.input-block-child:nth-child(4){
+    grid-area: D;
+}
+.input-block-child:nth-child(5){
+    grid-area: E;
+}
+.input-block-child:last-child  {
+    grid-area: F;
+}
+label {
+    font-size: 1.4em;
+    letter-spacing: 1px;
+    color: #080f2b;
+    margin-bottom: 0.4rem;
+}
+input {
+    padding: 0.6rem 0.6rem;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    font-size: 1em;
+    letter-spacing: 1px;
+ }
+input:focus {
+    outline: 2px solid rgb(177, 194, 209);
+}
+.signup-faq {
+    font-size: 0.9em;
+    letter-spacing: 2px;
+    color: #02345f;
+    transition: 0.2s;
+}
+.signup-faq:hover {
+    color:hsla(207, 100%, 91%, 0.463);
+}
+#formbtn {
+    font-size: 1.4em;
+    letter-spacing: 1px;
+    padding: 0.7rem 0;
+    width: 85%;
+    background-color: #1E517F;
+    color:hsla(207, 100%, 91%, 0.463);
+    border: 1px solid transparent;
+    border-radius: 2px;
+}
+#formbtn:hover {
+    background-color: #1961a0;
+    color:hsla(0, 0%, 100%, 0.846);
+}
+/**************************************/
+/**************************************/
+.input-block-child {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.input-block-parent-login {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    column-gap: 1rem;
+}
+/***************************************/
+
+/**** JAVASCRIPT REACTIONS ****/
+.message, .lnmessage, .nummessage, .emamessage, .passmessage,.conpassmessage {
+    margin-top: 0.2rem;
+    color: #ff3300;
+}
+.input-error-active {
+    border: 1px solid orangered;
+ }
+.input-success-active {
+    border: 2px solid rgb(0, 119, 255);
+}
+/**** JAVASCRIPT REACTIONS ****/
+
+/**** JAVASCRIPT EFFECTS ****/
+.none {
+    filter: opacity(0);
+}
+.navbar-active {
+    transform: translate(0%);
+}
+.selected {
+    background-color: hwb(208 6% 33% / 0.512);
+}
+/**** JAVASCRIPT EFFECTS ****/
+/**** USERINTERFACE SECTION ****/
+.ui-header {
+    height: 10vh;
+    padding: 0 3rem;
+    background-color:  hsla(210, 98%, 23%, 0.134);
+    display: flex;
+    align-items: center;
+}
+.webapp-body {
+    display: flex;
+    justify-content: space-between;
+}
+.left-handle {
+    width: 20vw;
+    height: 90vh;
+    background-color: #001749;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0.7rem;
+}
+.svg-img {
+    width: 20%;
+}
+.opt-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 0.8rem 0;
+    cursor: pointer;
+}
+.opt-header {
+    font-size: 1.4em;
+    letter-spacing: 2px;
+    color: aliceblue;
+}
+.line-ui {
+    height: 3px;
+    width: 100%;
+    background-color: #02345f;
+}
+.logout-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+    margin-bottom: 3rem;
+}
+.opt-list:hover {
+    background-color: hwb(208 6% 33% / 0.512);
+}
+.right-screen {
+    width: 84vw;
+    height: 90vh;
+    background-color: #00152e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2rem;
+}
+.qoute-block-ui {
+    background-color: #02345f;
+    height: 40vh;
+    width: 50vw;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+#gen-btn-ui {
+    padding: 0.8rem 4rem;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    border: 2px solid rgba(75, 126, 177, 0.145);
+    background-color: rgb(1, 66, 132);
+    color: aliceblue;
+    cursor: pointer;
+}
+.artist-block {
+    position: absolute;
+    background-color: hwb(221 0% 71%);
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.8rem;
+    padding: 0.5rem 1rem;
+    height: 50vh;
+    width: 30vw;
+    overflow-y: scroll;
+    left: 20vw;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transform: translateX(-200%);
+}
+.block-active {
+    transform: translateX(0%);
+}
+.arti-nam {
+    color: hsla(206, 100%, 90%, 0.464);
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.arti-nam:hover {
+    color: hsl(206, 100%, 90%);
+}
+.pickartSel {
+    color: hsl(206, 99%, 58%);
+}
+#diary, #chatbot, #suggestion, #connect, #settings {
+    filter: opacity(20%);
+}
+/**** USERINTERFACE SECTION ****/
+
+/**** MEDIA QUERIES ****/
+@media (max-width: 1000px){
+/**** LANDING-PAGE SECTION ****/
+.lp-div {
+    width: 80%;
+}
+.lp-header {
+    font-size: 5em;
+}
+/**** LANDING-PAGE SECTION ****/
+/**** ABOUT SECTION ****/
+#about-section {
+    padding: 2rem 0;
+}
+.about-para {
+    width: 80%;
+}
+/**** HOW TO USE ****/
+.htu-steps {
+    flex-flow: row wrap;
+    row-gap: 1rem;
+}
+.steps {
+    width: 70%;
+    padding: 1rem;
+}
+.step-header {
+    font-family: 'Nunito', sans-serif;
+}
+/**** HOW TO USE ****/
+/**** DEMO SECTION ****/
+.quote-block {
+    width: 70%;
+    padding: 3rem 2rem;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+.gen-qoute {
+    color:rgb(184, 221, 253);
+    font-size: 1.8em;
+    letter-spacing: 1px;
+    font-weight: 100;
+    font-style: italic;
+}
+#gen-btn {
+    font-size: 1.4em;
+}
+/**** DEMO SECTION ****/
+/**** FOOTER SECTION ****/
+footer {
+    min-height: 20vh;
+    background-color: rgb(0, 35, 80);
+    display: flex;
+    justify-content: flex-start;
+    padding: 2rem;
+}
+.con-header {
+    font-family: 'Nunito', sans-serif;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+    color:hsla(208, 92%, 80%, 0.504);
+}
+.footer-link {
+    font-size: 1.3em;
+    margin: 3px 0 0 3px;
+    letter-spacing: 2px;
+    color: rgb(0, 102, 255);
+}
+/**** FOOTER SECTION ****/
+}
+@media (max-width: 500px){
+    /**** HEADER SECTION ****/
+.g-header {
+    position: sticky;
+    top: 0;
+    height: 11vh;
+    padding: 0 1rem;
+    background-color:  hsla(210, 98%, 23%, 0.134);
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+}
+.burger-menu {
+    height: 30px;
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.line {
+    width: 100%;
+    height: 5px;
+    background-color: rgb(99, 177, 245);
+    border-radius: 2px;
+}
+.logo {
+    font-size: 2em;
+}
+.link-header {
+    display: none;
+}
+/**** HEADER SECTION ****/
+/**** LANDING-PAGE SECTION ****/
+.landing-page {
+    min-height: 90vh;
+    padding: 1rem;
+    align-items: center;
+}
+.lp-div {
+    width: 100%;
+}
+.lp-header {
+    font-size: 3.2em;
+    letter-spacing: 2px;
+    font-family: 'Cinzel', serif;
+    color: rgb(190, 221, 249);
+}
+.lp-para {
+    font-size: 1.1em;
+}
+.btn-div {
+    column-gap: 0.5rem;
+}
+.btn-1,
+.btn-2 {
+    padding: 0.8rem 2rem;
+}
+/**** LANDING-PAGE SECTION ****/
+/**** ABOUT SECTION ****/
+.about-para {
+    font-size: 1.3em;
+    line-height: 30px;
+    width: 90%;
+}
+/**** ABOUT SECTION ****/
+/**** HOW TO USE ****/
+#how-to-use {
+    padding: 2rem 0;
+}
+.steps {
+    border: 2px solid hsla(214, 94%, 34%, 0.091);
+    width: 90%;
+}
+.cta-link {
+    font-size: 1.5em;
+}
+/**** HOW TO USE ****/
+/**** DEMO SECTION ****/
+.quote-block {
+    width: 90%;
+    padding: 2rem 1rem;
+}
+.gen-qoute {
+    color:rgb(184, 221, 253);
+    font-size: 1.8em;
+    letter-spacing: 1px;
+}
+#gen-btn {
+    padding: 0.5rem 3rem;
+    font-size: 1.5em;
+}
+/**** DEMO SECTION ****/
+/**** FOOTER SECTION ****/
+footer {
+    min-height: 20vh;
+}
+/**** FOOTER SECTION ****/
+/**** USERINTERFACE SECTION ****/
+.left-handle {
+    width: 20vw;
+    height: 90vh;
+    background-color: #001749;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.options {
+    row-gap: 0;
+    height: 80%;
+}
+.svg-img {
+    width: 50%;
+}
+.opt-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 1rem 0;
+}
+.opt-header {
+    display: none;
+}
+.line-ui {
+    height: 3px;
+    width: 90%;
+    background-color: #02345f;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+.right-screen {
+    width: 84vw;
+    height: 90vh;
+    background-color: #00152e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2rem;
+}
+.qoute-block-ui {
+    height: 40vh;
+    width: 70vw;
+}
+#gen-btn-ui {
+    padding: 0.8rem 2rem;
+    font-size: 1.2em;
+}
+.artist-block {
+    width: 60vw;
+}
+/**** USERINTERFACE SECTION ****/
+}
+@media (max-width: 900px){
+    .left-handle {
+        width: 15vw;
+        height: 90vh;
+        background-color: #001749;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .options {
+        row-gap: 0;
+        height: 80%;
+    }
+    .svg-img {
+        width: 35%;
+    }
+    .opt-list {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        padding: 1rem 0;
+    }
+    .opt-header {
+        display: none;
+    }
+    .line-ui {
+        height: 3px;
+        width: 90%;
+        background-color: #02345f;
+        border: 2px solid transparent;
+        border-radius: 10px;
+    }
+    .right-screen {
+        width: 87vw;
+        height: 90vh;
+        background-color: #00152e;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 2rem;
+    }
+    .qoute-block-ui {
+        height: 40vh;
+        width: 70vw;
+    }
+    #gen-btn-ui {
+        padding: 0.8rem 2rem;
+        font-size: 1.2em;
+    }
+    .artist-block {
+        width: 45vw;
+    }
+    /**** FORM TINGS ****/
+#myForm {
+    display: flex;
+    padding: 1rem;
+    width: 90vw;
+    margin: 1rem 0;
+}
+.input-block-parent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+label {
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    color: #080f2b;
+    margin-bottom: 0.4rem;
+}
+input {
+    padding: 0.6rem 0.6rem;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    font-size: 1em;
+    letter-spacing: 1px;
+ }
+input:focus {
+    outline: 2px solid rgb(177, 194, 209);
+}
+.signup-faq {
+    font-size: 0.9em;
+    letter-spacing: 2px;
+    color: #02345f;
+    transition: 0.2s;
+}
+.signup-faq:hover {
+    color:hsla(207, 100%, 91%, 0.463);
+}
+#formbtn {
+    font-size: 1.4em;
+    letter-spacing: 1px;
+    padding: 0.7rem 0;
+    width: 100%;
+    background-color: #1E517F;
+    color:hsla(207, 100%, 91%, 0.463);
+    border: 1px solid transparent;
+    border-radius: 2px;
+}
+#formbtn:hover {
+    background-color: #1961a0;
+    color:hsla(0, 0%, 100%, 0.846);
+}
+/**************************************/
+/**************************************/
+.input-block-child {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.input-block-parent-login {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    column-gap: 1rem;
+}
+/***************************************/
+}
+/**** MEDIA QUERIES ****/
