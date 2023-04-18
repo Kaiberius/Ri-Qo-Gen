@@ -18,7 +18,7 @@ body {
 .g-header, .landing-page, #about-section, #how-to-use, #demo, footer, .yama-last {
     display: flex;
 } 
-.g-header, .landing-page, .nav, #about-section, #how-to-use, #demo, .yama-last, .form-body, .ui-header, .options {
+.g-header, .landing-page, .nav, #about-section, #how-to-use, #demo, .yama-last, .form-body, .ui-header, .options, .right-screen, .left-handle{
     align-items: center;
 }
 /**** HEADER SECTION ****/
@@ -438,7 +438,6 @@ input:focus {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
 }
 .options {
     display: flex;
@@ -483,7 +482,6 @@ input:focus {
     background-color: #00152e;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     row-gap: 2rem;
 }
