@@ -1,0 +1,19 @@
+{
+  "name": "ri-qo-gen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "java.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kaiberius/Ri-Qo-Genhttps:.git"
+  },
+  "author": "Kaiberius",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kaiberius/Ri-Qo-Genhttps:/issues"
+  },
+  "homepage": "https://github.com/Kaiberius/Ri-Qo-Genhttps:#readme"
+}
