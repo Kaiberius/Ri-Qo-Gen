@@ -45,3 +45,13 @@ const signUpBtn = document.querySelector("#signup-btn");
 signUpBtn.addEventListener("click", () => {
     window.location.href = "/sign-up.html";
 })
+
+const demoLink = document.querySelector("#test-demo");
+const demoSection = document.querySelector("#demo");
+
+demoLink.addEventListener("click", () => {
+  window.scrollTo({
+    top: demoSection.offsetTop,
+    behavior: "smooth"
+  });
+});

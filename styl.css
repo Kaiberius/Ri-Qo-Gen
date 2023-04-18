@@ -15,6 +15,12 @@ body {
 .landing-page, #about-section, #how-to-use {
     min-height: 100vh;
 }
+.g-header, .landing-page, #about-section, #how-to-use, #demo, footer, .yama-last {
+    display: flex;
+} 
+.g-header, .landing-page, .nav, #about-section, #how-to-use, #demo, .yama-last, .form-body, .ui-header, .options {
+    align-items: center;
+}
 /**** HEADER SECTION ****/
 .g-header {
     position: sticky;
@@ -23,9 +29,7 @@ body {
     padding: 0 3rem;
     background-color:  hsla(210, 98%, 23%, 0.134);
     backdrop-filter: blur(20px);
-    display: flex;
     justify-content: space-between;
-    align-items: center;
     z-index: 3;
 }
 .logo {
@@ -70,7 +74,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
     transition: 0.5s ease-in-out;
     transform: translateY(-120%);
 }
@@ -88,9 +91,7 @@ body {
 .landing-page {
     position: relative;
     padding: 0 3rem;
-    display: flex;
     justify-content: flex-start;
-    align-items: center;
 }
 .lp-div {
     width: 50%;
@@ -141,9 +142,8 @@ body {
 /**** LANDING-PAGE SECTION ****/
 /**** ABOUT SECTION ****/
 #about-section {
-    display: flex;
     flex-direction: column;
-    align-items: center;
+    padding: 3rem;
 }
 .abo-header, .htu-header {
     font-size: 2.5em;
@@ -167,10 +167,7 @@ body {
 #how-to-use {
     background-color: rgb(0, 58, 117);
     padding: 3rem 0;
-    display: flex;
     flex-direction: column;
-    align-items: center;
-
 }
 .htu-steps {
     display: flex;
@@ -215,9 +212,7 @@ body {
 /**** DEMO SECTION ****/
 #demo {
     min-height: 70vh;
-    display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
 }
 .quote-block {
@@ -230,14 +225,15 @@ body {
 .gen-qoute {
     color:rgb(184, 221, 253);
     font-size: 2em;
-    letter-spacing: 1px;
     font-weight: 100;
     font-style: italic;
+}
+.gen-qoute, #gen-btn {
+    letter-spacing: 1px;
 }
 #gen-btn {
     padding: 0.8rem 4rem;
     font-size: 1.2em;
-    letter-spacing: 1px;
     border-radius: 4px;
     border: 2px solid rgba(75, 126, 177, 0.145);
     background-color: rgb(1, 128, 255);
@@ -249,7 +245,6 @@ body {
 footer {
     min-height: 40vh;
     background-color: rgb(0, 35, 80);
-    display: flex;
     justify-content: flex-start;
     padding: 2rem;
 }
@@ -273,8 +268,6 @@ footer {
 /**** YAMA LAST ****/
 .yama-last {
     padding: 1rem;
-    display: flex;
-    align-items: center;
     justify-content: center;
     background-color: azure;
 }
@@ -293,7 +286,6 @@ footer {
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 #myForm {
     display: flex;
@@ -434,7 +426,6 @@ input:focus {
     padding: 0 3rem;
     background-color:  hsla(210, 98%, 23%, 0.134);
     display: flex;
-    align-items: center;
 }
 .webapp-body {
     display: flex;
@@ -452,7 +443,6 @@ input:focus {
 .options {
     display: flex;
     flex-direction: column;
-    align-items: center;
     row-gap: 0.7rem;
 }
 .svg-img {
