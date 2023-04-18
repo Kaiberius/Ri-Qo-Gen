@@ -39,3 +39,9 @@ genBtn.addEventListener("click", function() {
 
     GQ.innerHTML = generateRandomQuote();
 });
+
+const signUpBtn = document.querySelector("#signup-btn");
+
+signUpBtn.addEventListener("click", () => {
+    window.location.href = "/sign-up.html";
+})
