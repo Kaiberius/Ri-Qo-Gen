@@ -18,7 +18,8 @@ body {
 .g-header, .landing-page, #about-section, #how-to-use, #demo, footer, .yama-last {
     display: flex;
 } 
-.g-header, .landing-page, .nav, #about-section, #how-to-use, #demo, .yama-last, .form-body, .ui-header, .options, .right-screen, .left-handle{
+.g-header, .landing-page, .nav, #about-section, #how-to-use, #demo, .yama-last, .form-body, .ui-header, .options, 
+.right-screen, .left-handle{
     align-items: center;
 }
 /**** HEADER SECTION ****/
@@ -646,9 +647,9 @@ footer {
 .landing-page {
     min-height: 90vh;
     padding: 1rem;
-    align-items: center;
 }
 .lp-div {
+    margin-top: 5rem;
     width: 100%;
 }
 .lp-header {
