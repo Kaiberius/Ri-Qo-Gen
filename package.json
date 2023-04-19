@@ -1,19 +1,22 @@
 {
-  "name": "ri-qo-gen",
+  "name": "ri-qo",
   "version": "1.0.0",
-  "description": "",
+  "description": "Rizz Quote Generator",
   "main": "java.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kaiberius/Ri-Qo-Genhttps:.git"
+    "url": "git+https://github.com/Kaiberius/Ri-Qo-Gen.git"
   },
   "author": "Kaiberius",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Kaiberius/Ri-Qo-Genhttps:/issues"
+    "url": "https://github.com/Kaiberius/Ri-Qo-Gen/issues"
   },
-  "homepage": "https://github.com/Kaiberius/Ri-Qo-Genhttps:#readme"
+  "homepage": "https://github.com/Kaiberius/Ri-Qo-Gen#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
