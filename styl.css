@@ -647,9 +647,9 @@ footer {
 .landing-page {
     min-height: 90vh;
     padding: 1rem;
+    align-items: flex-start;
 }
 .lp-div {
-    margin-top: 5rem;
     width: 100%;
 }
 .lp-header {
